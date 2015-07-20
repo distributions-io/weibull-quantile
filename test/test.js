@@ -219,13 +219,13 @@ describe( 'distributions-weibull-quantile', function tests() {
 
 		actual = quantile( data, {
 			'lambda': validationData.lambda,
-		'k': validationData.k
+			'k': validationData.k
 		});
 		assert.notEqual( actual, data );
 
 		for ( i = 0; i < actual.length; i++ ) {
 			if ( isFiniteNumber( actual[ i ] ) && isFiniteNumber( expected[ i ] ) ) {
-				assert.closeTo( actual[ i ], expected[ i ], 1e-12 );
+				assert.closeTo( actual[ i ], expected[ i ], 1e-6 );
 			}
 		}
 
@@ -248,7 +248,7 @@ describe( 'distributions-weibull-quantile', function tests() {
 
 		for ( i = 0; i < actual.length; i++ ) {
 			if ( isFiniteNumber( actual[ i ] ) && isFiniteNumber( expected[ i ] ) ) {
-				assert.closeTo( actual[ i ], expected[ i ], 1e-12 );
+				assert.closeTo( actual[ i ], expected[ i ], 1e-6 );
 			}
 		}
 	});
@@ -275,7 +275,7 @@ describe( 'distributions-weibull-quantile', function tests() {
 		actual = quantile( data, {
 			'dtype': 'float32',
 			'lambda': validationData.lambda,
-		'k': validationData.k
+			'k': validationData.k
 		});
 
 		assert.notEqual( actual, data );
@@ -312,7 +312,7 @@ describe( 'distributions-weibull-quantile', function tests() {
 		actual = quantile( data, {
 			'accessor': getValue,
 			'lambda': validationData.lambda,
-		'k': validationData.k
+			'k': validationData.k
 		});
 		assert.notEqual( actual, data );
 
@@ -327,7 +327,7 @@ describe( 'distributions-weibull-quantile', function tests() {
 			'accessor': getValue,
 			'copy': false,
 			'lambda': validationData.lambda,
-		'k': validationData.k
+			'k': validationData.k
 		});
 		assert.strictEqual( actual, data );
 
@@ -356,7 +356,7 @@ describe( 'distributions-weibull-quantile', function tests() {
 		actual = quantile( data, {
 			'path': 'x.1',
 			'lambda': validationData.lambda,
-		'k': validationData.k
+			'k': validationData.k
 		});
 
 		expected = validationData.expected
@@ -389,7 +389,7 @@ describe( 'distributions-weibull-quantile', function tests() {
 			'path': 'x/1',
 			'sep': '/',
 			'lambda': validationData.lambda,
-		'k': validationData.k
+			'k': validationData.k
 		});
 		assert.strictEqual( actual, data );
 

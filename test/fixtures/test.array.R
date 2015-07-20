@@ -2,10 +2,10 @@ options( digits = 16 );
 library( jsonlite );
 
 
-lambda = 1
-k = 1
+lambda = 2
+k = 2
 probs = seq( 0, 1, 0.1 )
-y = qweibull( probs, lambda, k )
+y = qweibull( probs, k, lambda )
 
 cat( y, sep = ",\n" )
 
