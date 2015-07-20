@@ -1,7 +1,7 @@
 {
   "name": "distributions-weibull-quantile",
   "version": "0.0.0",
-  "description": "Weibull  distribution quantile function.",
+  "description": "Weibull distribution quantile function.",
   "author": {
     "name": "Philipp Burckhardt",
     "email": "pburckhardt@outlook.com"
