@@ -7,7 +7,7 @@ Quantile Function
 The [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for a [Weibull](https://en.wikipedia.org/wiki/Weibull_distribution) random variable is
 
 <div class="equation" align="center" data-raw-text="Q(p;k,\lambda) = \lambda {(-\ln(1-p))}^{1/k} " data-equation="eq:quantile_function">
-	<img src="" alt="Quantile function for a Weibull distribution.">
+	<img src="https://cdn.rawgit.com/distributions-io/weibull-quantile/7c13db0f28ae81b0990ee6f0c4ac910411f47a64/docs/img/eqn.svg" alt="Quantile function for a Weibull distribution.">
 	<br>
 </div>
 
