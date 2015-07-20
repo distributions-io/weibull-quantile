@@ -29,7 +29,11 @@
     "statistics",
     "stats",
     "cdf",
-    "inverse"
+    "inverse",
+    "weibull",
+    "survival analysis",
+    "life-times",
+    "percent points"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/weibull-quantile/issues"
